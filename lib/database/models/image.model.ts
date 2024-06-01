@@ -1,14 +1,15 @@
 import { Document, Schema, model, models } from "mongoose";
 
 export interface IImage extends Document {
+  _id: string; // Add the _id field here
   title: string;
   transformationType: string;
   publicId: string;
-  secureURL: string; 
+  secureURL: string;
   width?: number;
   height?: number;
-  config?: object; 
-  transformationUrl?: string; 
+  config?: object;
+  transformationUrl?: string;
   aspectRatio?: string;
   color?: string;
   prompt?: string;
